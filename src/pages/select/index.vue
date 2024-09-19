@@ -55,6 +55,9 @@ const todetail = (d: string) => {
     url: `/pages/select/detail?name=${d}&type=${yijitype.value}`,
   });
 };
+Taro.showShareMenu({
+  withShareTicket: true,
+});
 </script>
 <style lang="less">
 .selectday {
